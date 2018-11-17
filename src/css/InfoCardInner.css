@@ -1,0 +1,45 @@
+.block-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 20% 10px auto;
+  grid-template-areas:
+    "CardTitle CardTitle"
+    "CardDecor CardDecor"
+    "CardIcon  CardText "
+  ;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+}
+
+.block-info > .block-info-title {
+  font-family: 'Montserrat', sans-serif;
+  background-color: white;
+  color: grey;
+  grid-area: CardTitle;
+  border-radius: inherit;
+}
+
+.block-info > .block-info-decor {
+  background-color: white;
+  border: 2px grey;
+  border-style: solid none dashed none;
+  grid-area: CardDecor;
+}
+
+.block-info > .block-info-icon {
+  background-color: white;
+  fill: black;
+  grid-area: CardIcon;
+  width: 50%;
+  margin: auto;
+  border-radius: inherit;
+}
+
+.block-info > .block-info-text {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  background-color: white;
+  grid-area: CardText;
+  border-radius: inherit;
+}

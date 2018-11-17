@@ -1,0 +1,19 @@
+.btn-footer {
+  background-color: white;
+  width: 25%;
+  padding: 10px 5px;
+}
+
+.btn-footer-inner {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  border: 1px solid grey;
+  box-shadow: 0 0 5px 0 grey;
+  border-radius: 10px;
+}
+
+.btn-footer-active {
+  background-color: grey;
+}
