@@ -8,4 +8,4 @@ npm run build - build into static website
 npm run test - run code format and flow check  
 
 # Demo
-[A demo can be view here](https://festive-brahmagupta-a4ca84.netlify.com/)
+[A demo can be view here](https://copycat1024.github.io/jubic-tryout/)
