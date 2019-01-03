@@ -11,7 +11,7 @@ module.exports = {
   ],
   output: {
     filename: 'bundle.[hash].js',
-    path: path.resolve(__dirname, 'build')
+    path: path.resolve(__dirname, 'docs')
   },
   module: {
     rules: [
@@ -43,7 +43,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['build/*']),
+    new CleanWebpackPlugin(['docs/*']),
     new HtmlWebpackPlugin({
       inject: true,
       hash: true,
@@ -55,7 +55,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([{
       from: path.resolve(__dirname, 'public'),
-      to: path.resolve(__dirname, 'build')
+      to: path.resolve(__dirname, 'docs')
     }])
   ]
 }
